@@ -1,0 +1,37 @@
+package com.ly.dubbo.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.xn.api.dubbo.entity.City;
+import com.xn.api.dubbo.service.CityService;
+import com.xnph66.api.dubbo.entity.LawParamVo;
+import com.xnph66.api.dubbo.service.LawReqService;
+
+@RestController
+public class ComTestController {
+
+	@Autowired
+	private LawReqService r_lawReqService;
+
+	@RequestMapping(value = "/test/{type}")
+	public void getCity(HttpServletRequest request,@PathVariable String type) {
+		System.out.println("******************进入消费者方法***************");
+		if("law".equals(type)){
+			try {
+				LawParamVo lawParamVo = new LawParamVo();
+				r_lawReqService.lawReq(lawParamVo);
+			} catch (Exception e) {
+				System.out.println("获取异常信息");
+				e.printStackTrace();
+			}
+			
+		}
+		System.out.println("******************进入消费者完毕***************");
+	}
+
+}

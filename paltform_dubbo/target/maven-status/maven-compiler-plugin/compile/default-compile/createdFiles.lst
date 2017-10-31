@@ -1,0 +1,5 @@
+com\xnph66\api\dubbo\service\LawReqService.class
+com\xnph66\api\dubbo\vo\LawParamVo.class
+com\xnph66\api\dubbo\entity\LawReqParam.class
+com\xnph66\api\dubbo\vo\CommonVo.class
+com\xnph66\api\dubbo\annnotation\VNEmpty.class

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>服务平台更新为war包形式</CommitComment>
+	<CommitComment>修改回调房贷SQL
+</CommitComment>
+	<CommitComment>查询回调房贷数据，如果queue队列存在已有的reqId，则移除查询列表中的对象</CommitComment>
+	<CommitComment>修改回调房贷定时任务时间配置 
+
+每30秒查询一次</CommitComment>
+	<CommitComment>房贷平台，修改properties文件</CommitComment>
+	<CommitComment>初始导入。</CommitComment>
+</CommitComments>

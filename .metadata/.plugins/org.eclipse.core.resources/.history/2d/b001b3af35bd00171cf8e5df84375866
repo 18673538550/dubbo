@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ly.dubbo</groupId>
+	<artifactId>demoConsume</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>dubbo-consume</name>
+
+	<!-- Spring Boot 启动父依赖 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.1.RELEASE</version>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.7</java.version>
+		<com.alibaba.dubbo.version>2.5.3</com.alibaba.dubbo.version>
+		<org.apache.zookeeper.version>3.4.8</org.apache.zookeeper.version>
+		<com.github.sgroschupf.zkclient.version>0.1</com.github.sgroschupf.zkclient.version>
+		<paltform.dubbo.version>1.2</paltform.dubbo.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${com.alibaba.dubbo.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${org.apache.zookeeper.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-log4j12</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>${com.github.sgroschupf.zkclient.version}</version>
+		</dependency>
+
+		<!-- 房贷平台服务api -->
+		<dependency>
+			<groupId>com.xnph66.api</groupId>
+			<artifactId>paltform_dubbo</artifactId>
+			<version>${paltform.dubbo.version}</version>
+		</dependency>
+	</dependencies>
+
+	<!--maven的插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+				</configuration>
+			</plugin>
+
+
+
+		</plugins>
+
+		<!-- 配置java版本 不配置的话默认父类配置的是1.6 -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>central</name>
+			<!-- 配置仓库的地址 -->
+			<url>http://10.15.14.78:8081/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+</project>

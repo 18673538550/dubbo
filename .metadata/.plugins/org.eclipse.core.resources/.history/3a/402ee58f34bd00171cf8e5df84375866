@@ -1,0 +1,36 @@
+package com.xnph66.api.dubbo.service;
+
+import com.xnph66.api.dubbo.vo.LawParamVo;
+
+public interface LawReqService {
+	
+	/**
+	 * 请求汇法网服务
+	 * @param lawParamVo
+	 * @return
+	 */
+	public String lawReq(LawParamVo lawParamVo) throws Exception;
+	
+	/**
+	 * 获取汇法网token
+	 * @param lawParamVo
+	 * @return
+	 */
+	public String getLawToken(LawParamVo lawParamVo) throws Exception;
+	
+	/**
+	 * 封装参数
+	 * @param lawParamVo
+	 * @return
+	 */
+	public String AssemblyParameters(LawParamVo lawParamVo);
+	
+	
+	/**
+	 * 发送请求 - 汇法网
+	 * @param reqParam
+	 * @return
+	 */
+	public String sendRequst(String reqParam)  throws Exception;
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;house_paltform&apos;&#x0D;&#x0A;- Original project: &apos;house_paltform&apos;&#x0D;&#x0A;- Original element: &apos;CallbackHousePool.class&apos;" description="Delete element" element1="src/main/java/com/xnph66/boot/service/impl/CallbackHousePool.class" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1503996154535" subPackages="false" version="1.0"/>
+</session>

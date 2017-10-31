@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Mon Oct 30 16:59:53 CST 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\xn072816\\.m2\\repository\\org\\springframework\\spring-web\\4.3.6.RELEASE\\spring-web-4.3.6.RELEASE.jar=D\:\\software\\apache-tomcat-8.0.33\\wtpwebapps\\dubbo-provider\\WEB-INF\\lib\\spring-web-4.3.6.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\xn072816\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-websocket\\8.5.11\\tomcat-embed-websocket-8.5.11.jar=D\:\\software\\apache-tomcat-8.0.33\\wtpwebapps\\dubbo-provider\\WEB-INF\\lib\\tomcat-embed-websocket-8.5.11.jar
+org.eclipse.jst.jee.server\:dubbo-provider=D\:\\software\\apache-tomcat-8.0.33\\wtpwebapps\\dubbo-provider

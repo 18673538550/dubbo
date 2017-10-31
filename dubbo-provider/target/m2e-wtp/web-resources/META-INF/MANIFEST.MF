@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: demo-provider
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.xnph66
+Build-Jdk: 1.7.0_79
+Built-By: xn072816
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://projects.spring.io/spring-boot/demo/
+

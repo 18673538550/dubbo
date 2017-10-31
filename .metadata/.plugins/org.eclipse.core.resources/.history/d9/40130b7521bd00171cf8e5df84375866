@@ -1,0 +1,5 @@
+package com.xnph66.api.dubbo.entity;
+
+public class LawReqParam {
+
+}

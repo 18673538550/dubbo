@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: springCloud
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ly
+Build-Jdk: 1.7.0_79
+Built-By: xn072816
+Created-By: Maven Integration for Eclipse
+
